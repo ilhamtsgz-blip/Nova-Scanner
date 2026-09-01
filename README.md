@@ -62,13 +62,10 @@
 
 project/
 ├── main.py                          # CyberNova Security Gateway (Entry Point)
-├── security/
-│   └── init.py
 ├── CYBERNOVA/
 │   └── dev_ilhamgz.py              # DEV ILHAMGZ AI Security Scanner
 ├── requirements.txt                 # Python dependencies
-├── README.md                        # Documentation
-└── authorized_ids.txt              # (GitHub) Authorized user IDs
+└──README.md 
 
 ```
 
@@ -78,51 +75,14 @@ project/
 
 ### 1. **Clone Repository**
 ```bash
-git clone https://github.com/yourusername/cybernova-scanner.git
-cd cybernova-scanner
+git clone https://github.com/blip-ilhamgz/Nova-scanner
+cd Nova-scanner
 ```
 
 2. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
-```
-
-3. Setup Directory Structure
-
-Pastikan struktur folder seperti di atas:
-
-```bash
-mkdir -p CYBERNOVA security
-```
-
-4. Setup GitHub Authorization
-
-Buat repository GitHub public dan upload authorized_ids.txt dengan format:
-
-```
-# Authorized IDs for CyberNova Security Gateway
-# Format: satu ID per baris
-
-a3b5c7d9e1f2g4h6i8j0k1l2m3n4o5p6
-f8g7h6i5j4k3l2m1n0o9p8q7r6s5t4u3
-```
-
-5. Setup Telegram Notification (Opsional)
-
-Edit main.py dan isi token Telegram:
-
-```python
-"TELEGRAM_BOT_TOKEN": "YOUR_BOT_TOKEN_HERE",
-"TELEGRAM_CHAT_ID": "YOUR_CHAT_ID_HERE",
-```
-
-6. Update GitHub URL
-
-Edit main.py dengan URL authorized_ids Anda:
-
-```python
-"AUTHORIZED_IDS_URL": "https://raw.githubusercontent.com/username/repo/main/authorized_ids.txt",
 ```
 
 ---
